@@ -6,7 +6,9 @@ With this app you can explore spatial transcriptomics data of sections from lung
 # Installation
 Clone the repo from the terminal by running:
 
-`$git clone https://github.com/ludvigla/DiscovAir_lung_explorer`
+```
+git clone https://github.com/ludvigla/DiscovAir_lung_explorer
+```
 
 To run the app, you first need to install the following R packages:
 
@@ -27,20 +29,28 @@ CRAN:
 GitHub:
 - d3heatmap
 
-You can install the packages directly with the install-packages.R script:
+You can install the packages directly with the install-packages.R script from a terminal (tested on R v4.0.3):
 
-`$Rscript install-packages.R`
+```
+Rscript install-packages.R
+```
 
 # Run the app
 From RStudio, navigate to the cloned repository:
 
-`setwd("~/DiscovAir_data_explorer")`
+```
+setwd("~/DiscovAir_data_explorer")
+```
 
 You can then activate the app by running:
 
-`library(shiny)`
+```
+library(shiny)
+```
 
-`runApp()`
+```
+runApp()
+```
 
 Or alternatively you can open the app.R file File->Open file->.../app.R and then click on the Run App icon at the top of the script.
 

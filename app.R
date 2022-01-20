@@ -37,9 +37,13 @@ palette.select <- list("Spectral" = rev(brewer.pal(n = 9, name = "Spectral")),
 
 ui <- dashboardPage(
   
-  header = dashboardHeader(title = "DiscovAir \ndata explorer"),
+  header = dashboardHeader(tags$li(class = "dropdown",
+                                   tags$style(".main-header {max-height: 60px}"),
+                                   tags$style(".main-header .logo {height: 60px}")),
+                           title = "DiscovAir \ndata explorer"),
   
   sidebar = dashboardSidebar(
+    tags$style(".left-side, .main-sidebar {padding-top: 60px}"),
     width = 250,
     column(width = 12,
            selectInput(

@@ -1,7 +1,8 @@
 # DiscovAir spatial transcriptomics data explorer
 With this app you can explore spatial transcriptomics data of sections from lung tissue.
 
-![](app.png)
+![](app1.png)
+![](app2.png)
 
 # Installation
 Clone the repo from the terminal by running:

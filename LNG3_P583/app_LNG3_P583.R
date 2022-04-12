@@ -8,7 +8,6 @@ library(zeallot)
 library(shinyBS)
 library(shinyWidgets)
 library(RColorBrewer)
-library(leafem)
 
 coords.list <- setNames(lapply(paste0("data/coords", c(1:8)), function(f) readRDS(file = f)), nm = paste0(c(1:8)))
 expr.data.list <- setNames(lapply(paste0("data/expr.data", c(1:8)), function(f) readRDS(file = f)), nm = paste0(c(1:8)))
@@ -228,8 +227,7 @@ server <- function(input, output, session) {
                        circleOptions = FALSE,
                        markerOptions = FALSE,
                        editOptions = editToolbarOptions(selectedPathOptions = selectedPathOptions())) %>%
-        fitBounds(lng1 = 0, lat1 = 0, lng2 = 607, lat2 = -588) %>%
-        addMouseCoordinates()
+        fitBounds(lng1 = 0, lat1 = 0, lng2 = 607, lat2 = -588)
       return(m)
     })
   })

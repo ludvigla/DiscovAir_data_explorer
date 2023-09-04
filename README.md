@@ -8,7 +8,7 @@ With this app you can explore spatial transcriptomics data of sections from lung
 Clone the repo from the terminal by running:
 
 ```
-git clone https://github.com/ludvigla/DiscovAir_lung_explorer
+git clone https://github.com/ludvigla/DiscovAir_data_explorer
 ```
 
 To run the app, you first need to install the following R packages:
@@ -74,3 +74,7 @@ Spatial transcriptomics data obtained from LNG3 was paired with (1st/2nd generat
 and spatial transcriptomics data obtained from LNG5 (distal airways) was paired with the "d_LowLeftPar" and "e_TopLeftPar" scRNA-seq data.
 
 Cell types with fewer than 50 cells were excluded from the scRNA-seq datasets and each cell type was downsampled to 250 cells to speed up computation. 
+
+# Comments
+
+If the wrong tiles are loaded in the viewer, you might have to restart and proceed in a clean R session. 

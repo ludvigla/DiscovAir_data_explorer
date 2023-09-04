@@ -198,7 +198,7 @@ server <- function(input, output, session) {
   }
   
   
-  # render a histogram pop-up for the selected values to be visualzied
+  # render a histogram pop-up for the selected values to be visualized
   output$histogram <- renderPlot({
     c(data, variable, pal, pal_rev) %<-% get_data()
     ggplot(data, aes_string(paste0("`", variable, "_raw`"))) + 

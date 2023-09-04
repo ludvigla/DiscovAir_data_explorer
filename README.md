@@ -58,8 +58,8 @@ Or alternatively you can open the app.R file File->Open file->.../{DATASET_NAME}
 When you open the app, you will see an H&E image of the first lung tissue section (`section 1`) overlaid by spots. The color of the spots correspond either to normalized gene expression or cell type proportions (will be added soon) which you can select from in the left panel. You can also switch tabs to visualize the other lung tissue section. 
 
 Formatting options:
-  * opacity : sets the (maximum) spot opacity to control transparanecy
-  * maxcutoff : trim values based on a specifiec quantile, eg. a value of 0.99 will clip the values of the displayed value vector to the 99th quantile
+  * opacity : sets the (maximum) spot opacity to control transparency
+  * maxcutoff : trim values based on a specific quantile, eg. a value of 0.99 will clip the values of the displayed value vector to the 99th quantile
   * reverse palette : should the color palette be reversed?
   * opacity gradient : should the spot opacity be scaled with the displayed value?
   * Value histogram : show a histogram of the selected value vector

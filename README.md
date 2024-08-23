@@ -65,6 +65,14 @@ Formatting options:
   * Value histogram : show a histogram of the selected value vector
   * palette : select a color palette
 
+## gene
+
+When selecting a gene name, the spots are colored by log-normalized gene expression. These normalized values were were obtained using the Seurat R package for single cell omics data analysis.
+
+## cell
+
+When selecting a cell type name, the spots are colored by proportion. 
+
 # Cell type mapping
 
 Cell type proportions were estimated using the [stereoscope](https://github.com/almaan/stereoscope) deconvolution method. The scRNA-seq dataset was obtained 
